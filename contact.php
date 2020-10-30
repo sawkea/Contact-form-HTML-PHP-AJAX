@@ -14,7 +14,8 @@ $subject = '';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'need' => 'Need', 'email' => 'Email', 'message' => 'Message'); 
+$fields = msk_send_mail('template_when_this_happens', $destinataire, $data);
+
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Le message a bien été envoyé !';
